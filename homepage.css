@@ -428,6 +428,7 @@ body {
 @media screen and (max-width: 650px) {
   .ham-btn {
     display: block;
+    width: 40px;
   }
   .logo {
     width: 140px;
