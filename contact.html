@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Inconsolata:wght@900&family=Nova+Mono&family=Orbitron:wght@900&family=Roboto+Mono:ital,wght@1,500&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <img src="logo.svg" class="logo" />
+      <div class="link-holder">
+        <a href="homepage.html" class="links">Home</a>
+        <a href="about.html" class="links">About</a>
+        <a href="contact.html" class="links">Contact Us</a>
+      </div>
+      <img src="./images/hamburger.png" class="ham-btn" />
+    </div>
+    <div class="major-whole-holder">
+    <div class="contact-whole-holder">
+      <p class="contact-us-title">Contact Us</p>
+      <img src="gmail.png" class="icon" />
+      <div class="contact-us">
+        If you want to give comments, address inconvinence or have any
+        questions regarding our whole website, please contact us through your
+        email adress below.
+      </div>
+      <div class="contact-form">
+        <input type="text" name="name" placeholder="Name" class="name" required />
+        <input type="email" name="email" placeholder="Email" class="email" required />
+        <p class="invalid">Invalid email address</p>
+        <textarea type="text" placeholder="Message" class="message"required></textarea>
+        <button type="submit" class="send">Send</button>
+      </div>
+
+      <div class="email-sent-holder">
+        <div class="close-btn">Close</div>
+        <p class="email-sent-text">Your email has been sent successfully</p>
+      </div> 
+      <div class="opacity-div"></div>
+    </div>
+    </div> 
+  </body>
+  </script>
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+emailjs.init('3AFWMbJTf-7-jCkiV')
+</script>
+<script src='contact.js'></script>
+</html>

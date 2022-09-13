@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("./fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("./fonts/Orbitron/static/Orbitron-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto mono";
+  src: url("./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  background-color: #e9f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mute,
+.unmute {
+  position: fixed;
+  z-index: 18;
+  width: 40px;
+  top: 10px;
+  right: 15px;
+}
+
+.nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: #e9f5f9;
+  z-index: 2;
+}
+.logo {
+  width: 200px;
+  height: 10vh;
+}
+.links {
+  color: #1a6985;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Orbitron", sans-serif;
+  width: 200px;
+  position: relative;
+  font-weight: 500;
+}
+
+.links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: orange;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.links:hover:after {
+  width: 100px;
+}
+
+.link-holder {
+  width: 70%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links:nth-child(3)::after {
+  background-color: orange;
+  width: 0px;
+  transition: 0.5s;
+}
+
+.links:nth-child(3):hover:after {
+  width: 200px;
+}
+
+.major-whole-holder {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-whole-holder {
+  position: relative;
+  width: 90vw;
+  height: 170vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-us-title {
+  font-size: 90px;
+  font-family: "Share Tech Mono", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: -100px;
+}
+.icon {
+  width: 300px;
+}
+.contact-us {
+  width: 700px;
+  font-size: 30px;
+  font-family: "Share Tech Mono", sans-serif;
+  margin-top: -100px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  min-height: 500px;
+}
+.invalid {
+  font-size: 15px;
+  color: rgb(255, 75, 75);
+  width: 100%;
+  text-align: start;
+  padding-left: 60px;
+  display: none;
+}
+.invalidClass {
+  animation: invalidAnimation 0.1s linear;
+}
+@keyframes invalidAnimation {
+  0% {
+    transform: translateY(5px);
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.name,
+.email,
+.message {
+  border: 2px solid rgb(130, 230, 255);
+  padding: 20px;
+  font-size: 16px;
+  outline: none;
+}
+.name::placeholder,
+.email::placeholder,
+.message::placeholder {
+  color: rgb(0, 117, 196);
+}
+.name,
+.email {
+  width: 600px;
+  height: 50px;
+  color: #1a6985;
+}
+.message {
+  width: 600px;
+  min-height: 300px;
+  color: rgb(204, 106, 122);
+}
+.send {
+  width: 150px;
+  height: 50px;
+  border: 2px solid skyblue;
+  background-color: rgb(94, 191, 230);
+  transition: 1s;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+}
+.send:hover {
+  border: 2px solid dodgerblue;
+  transform: scale(1.04);
+}
+.email-sent-holder {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  background-color: white;
+  border-radius: 15px;
+  display: none;
+}
+.opacity-div {
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(7px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+}
+.email-sent-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 25px;
+}
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 75px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 219, 146);
+  color: white;
+  z-index: 5;
+  transition: 1s;
+  cursor: pointer;
+}
+.close-btn:hover {
+  background-color: tomato;
+}
+.red {
+  color: rgb(255, 75, 75);
+}
+.red::placeholder {
+  color: rgb(255, 75, 75);
+}
+
+.green {
+  color: rgb(0, 196, 98);
+}
+.green::placeholder {
+  color: rgb(0, 196, 98);
+}
+
+@media screen and (min-width: 650px) and (max-width: 1024px) {
+  .logo {
+    width: 160px;
+  }
+  .links {
+    font-size: 20px;
+  }
+  .mute,
+  .unmute {
+    top: 100px;
+  }
+  .contact-us-title {
+    font-size: 50px;
+  }
+  .contact-us {
+    font-size: 25px;
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .icon {
+    width: 100px;
+  }
+  .name,
+  .email,
+  .message {
+    font-size: 12px;
+  }
+  .name,
+  .email {
+    width: 400px;
+  }
+  .message {
+    width: 400px;
+  }
+}
+
+.ham-btn {
+  display: none;
+  width: 50px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.ham-btn:hover {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 650px) {
+  .ham-btn {
+    display: block;
+  }
+  .logo {
+    width: 140px;
+  }
+  .nav {
+    justify-content: space-around;
+    padding-left: 20px;
+  }
+  .mute,
+  .unmute {
+    width: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .links {
+    font-size: 20px;
+  }
+  .link-holder {
+    width: 50%;
+    display: none;
+  }
+  .contact-us-title {
+    font-size: 50px;
+  }
+  .contact-us {
+    font-size: 23px;
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .icon {
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .name,
+  .email,
+  .message {
+    font-size: 12px;
+  }
+  .name,
+  .email {
+    width: 90%;
+  }
+  .message {
+    width: 90%;
+  }
+}
+
+.nav-added {
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+.link-holder-added {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+}
+
+.link-holder-added a {
+  width: auto;
+}
