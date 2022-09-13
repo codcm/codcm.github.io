@@ -108,7 +108,7 @@ body {
 .contact-whole-holder {
   position: relative;
   width: 90vw;
-  height: 170vh;
+  min-height: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
