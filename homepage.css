@@ -118,7 +118,7 @@ body {
 
 .page1 {
   width: 100vw;
-  height: 100vh;
+  min-height: 1000px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -210,7 +210,7 @@ body {
 }
 .page2 {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 1000px;
   background-color: #cdf1f7;
   display: flex;
   justify-content: space-around;
@@ -246,7 +246,7 @@ body {
 
 .page3 {
   width: 100vw;
-  height: 100vh;
+  min-height: 1000px;
   background-color: #b0e3f3;
   display: flex;
   justify-content: center;
@@ -363,7 +363,6 @@ body {
   .page2 {
     flex-direction: column;
     align-items: center;
-    min-height: 150vh;
   }
   .level-up {
     width: auto;
@@ -400,7 +399,6 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    min-height: 130vh;
     justify-content: space-around;
   }
   .community {
