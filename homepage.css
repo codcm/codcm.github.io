@@ -487,7 +487,8 @@ body {
     min-height: 120vh;
   }
   .code {
-    transform: scale(0.5);
+    max-width: 300px;
+    max-height: 300px;
   }
   .level-up {
     width: auto;
