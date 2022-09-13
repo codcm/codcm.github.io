@@ -124,7 +124,6 @@ body {
 }
 .icon {
   width: 300px;
-  margin: 90px;
 }
 .contact-us {
   width: 700px;
@@ -289,7 +288,6 @@ body {
   }
   .icon {
     width: 100px;
-    margin: 90px;
   }
   .name,
   .email,
@@ -355,7 +353,6 @@ body {
     width: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin: 90px;
   }
   .name,
   .email,
