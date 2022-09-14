@@ -147,14 +147,14 @@ twoimagehold img {
 
 .curriculum {
   width: 25%;
-  height: 100%;
+  height: calc(100% - 80px);
   position: fixed;
   background-color: #e9f5f9;
   overflow: auto;
   z-index: 2;
   transition: 0.6s;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin-top: 80px;
+  padding-bottom: 50px;
 }
 
 .content {
@@ -628,3 +628,21 @@ bold {
 .mute-added {
   opacity: 0;
 }
+
+.whole-holder-added {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 178, 223);
+  border-radius: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e8f9ff;
+}
+
