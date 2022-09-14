@@ -187,6 +187,7 @@ hamBtn.onclick = () => {
   }
 };
 
+const wholeHolder = document.querySelector(".whole-holder");
 const openCurriculum = document.createElement("img");
 const curriculum = document.querySelector(".curriculum");
 openCurriculum.src = "./images/arrow-right.png";
@@ -205,11 +206,15 @@ openCurriculum.onclick = () => {
     openCurriculum.classList.remove("open-cur-added2");
     curriculum.classList.add("cur-added");
     openCurriculum.classList.add("open-cur-added");
+    wholeHolder.classList.add("whole-holder-added");
+    document.body.style.overflow = "hidden";
   } else {
     clicked2 = false;
     mustScrolled = false;
     curriculum.classList.remove("cur-added");
+    document.body.style.overflow = "auto";
     openCurriculum.classList.remove("open-cur-added");
+    wholeHolder.classList.remove("whole-holder-added");
   }
 };
 let time;
