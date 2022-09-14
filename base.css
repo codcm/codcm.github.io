@@ -215,7 +215,7 @@ twoimagehold img {
 }
 
 .sub-content {
-  min-width: 90%;
+  min-width: calc(100% - 50px);
   height: 40px;
   display: flex;
   align-items: center;
@@ -249,7 +249,7 @@ twoimagehold img {
 }
 
 .sub-content2 {
-  min-width: 90%;
+  min-width: calc(100% - 50px);
   height: 40px;
   display: flex;
   align-items: center;
