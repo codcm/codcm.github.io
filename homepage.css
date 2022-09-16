@@ -118,7 +118,7 @@ body {
 
 .page1 {
   width: 100vw;
-  min-height: 1000px;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -210,7 +210,7 @@ body {
 }
 .page2 {
   width: 100vw;
-  min-height: 1000px;
+  min-height: 100vh;
   background-color: #cdf1f7;
   display: flex;
   justify-content: space-around;
@@ -246,7 +246,7 @@ body {
 
 .page3 {
   width: 100vw;
-  min-height: 1000px;
+  min-height: 100vh;
   background-color: #b0e3f3;
   display: flex;
   justify-content: center;
