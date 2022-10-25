@@ -155,17 +155,9 @@ let allLinks = document.querySelectorAll("a");
 let projectPageLink = document.createElement("a");
 projectPageLink.innerText = "Project Page";
 projectPageLink.classList.add("links");
-projectPageLink.setAttribute("href", "https://t.me/codeCom16");
+projectPageLink.setAttribute("href", "https://t.me/learnwithcodecom");
 linkHolder.appendChild(projectPageLink);
 links = document.querySelectorAll(".links");
-
-let newTab = () => {
-  links.forEach((link) => {
-    link.setAttribute("target", "_blank");
-  });
-};
-
-newTab();
 
 const nav = document.querySelector(".nav");
 
