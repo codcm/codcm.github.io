@@ -414,6 +414,7 @@ bold {
   background-color: #873e23;
   color: rgb(241, 241, 241);
   border-radius: 3px;
+  overflow-x: scroll;
 }
 
 .exercise span {
