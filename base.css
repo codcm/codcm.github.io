@@ -172,6 +172,7 @@ twoimagehold img {
 
 .content-link {
   text-decoration: none;
+  color: #063970;
   transition: 0.5s;
   font-size: 19px;
   width: 100%;
