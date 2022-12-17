@@ -230,3 +230,17 @@ window.addEventListener("scroll", () => {
     }, 2000);
   }
 });
+
+// add new html files
+function createSubContent() {
+  let subContent = document.createElement("div");
+  subContentHolder.appendChild(subContent);
+  subContent.classList.add("sub-content");
+  let newlink = document.createElement("a");
+  subContent.appendChild(newlink);
+  newlink.setAttribute("href", "addedhtml1,forms.html");
+  newlink.setAttribute("class", "sub-content-link");
+  newlink.innerText = "1.10 Form";
+}
+
+createSubContent();
