@@ -418,6 +418,10 @@ bold {
   overflow-x: scroll;
 }
 
+.exercise::-webkit-scrollbar {
+  display: none;
+}
+
 .exercise span {
   color: rgb(255, 255, 255);
   font-size: 21px;
